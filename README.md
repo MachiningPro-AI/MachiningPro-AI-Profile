@@ -1,105 +1,154 @@
-# MachiningPro AI
 
-**Engineering Intelligence for Machining & Manufacturing Planning**
+PROJECT: SpotWeldPro AI
+TASK: ENERGY-P2-FUNCTIONAL-UAT-01
+MODE: SAFE ENGINEERING VALIDATION
 
-MachiningPro AI is an engineering decision-support platform designed to connect
-technical drawings and CAD data with machining process planning in a traceable workflow.
+CONTEXT:
+- GitHub: Bursa-16/SpotWeldPro-AI
+- Production commit: 503a818
+- Render backend: https://spotweldpro-ai-api.onrender.com
+- Demo frontend: https://spotweldpro-ai-demo.onrender.com
+- Neon Alembic head: 0019_import_batches
+- weld_groups and import_batches tables: verified
+- All 12 ENERGY-P2 routes: registered and responding
+- python-multipart hotfix: deployed
 
-## Current Capabilities
+OBJECTIVE:
+Validate the engineering correctness, API behavior,
+frontend integration and reporting capabilities of
+ENERGY-P2 before customer demonstrations.
 
-- CAD / IGES engineering data analysis
-- 3D manufacturing feature recognition
-- Feature highlighting and feature-tree visualization
-- Dimensional and tolerance interpretation
-- GD&T and datum intelligence
-- Drawing-to-CAD feature association
-- Alternative machining process route generation
-- Machine / cutting-tool / holder candidate evaluation
-- Process capability assessment
-- Cycle-time analysis
-- Manufacturing Plan generation
-- Inspection Plan foundation
-- Control Plan foundation
-- Engineering traceability
-- JSON / CSV / HTML engineering exports
-- Turkish / English interface
+PHASE 1 — BASELINE
+1. Inspect repository and current Git state.
+2. Identify all ENERGY-P2 backend and frontend modules.
+3. Inspect existing tests and engineering formulas.
+4. Identify all required inputs, units and outputs.
+5. Do not assume that HTTP 401 proves functional correctness.
 
-## Real IGES Engineering Demo
+PHASE 2 — ENGINEERING CALCULATIONS
+Independently verify:
+- Single weld energy estimation
+- Multi-spot energy aggregation
+- Current, voltage, resistance and time calculations
+- Unit conversions
+- Energy totals and averages
+- Electrode and process assumptions
+- Cost calculations
+- Optimization objective functions
+- Engineering constraints and boundary conditions
 
-The current demo processes a real synthetic, non-proprietary IGES model through the
-MachiningPro AI engineering pipeline.
+Use deterministic reference cases and independently
+calculated expected results.
 
-Typical workflow:
+Distinguish electrical input energy, estimated weld
+energy and any model-derived efficiency assumptions.
 
-**IGES / Drawing**
-→ **Engineering Requirements**
-→ **3D Feature Recognition**
-→ **GD&T Intelligence**
-→ **Alternative Process Routes**
-→ **Process Capability**
-→ **Cycle Time**
-→ **Manufacturing Plan**
-→ **Inspection & Control**
-→ **Traceable Export**
+Do not invent experimental measurements.
 
-## 3D Feature Intelligence
+PHASE 3 — OPTIMIZATION
+Verify:
+- Optimization algorithms and constraints
+- Feasibility checks
+- Minimum and maximum parameter limits
+- Objective function calculations
+- Infeasible input handling
+- Numerical stability
+- Deterministic repeatability
+- Behavior near engineering limits
 
-MachiningPro AI can visualize the imported part and highlight recognized manufacturing
-features such as holes, precision diameters and other machinable geometry.
+Optimization must not recommend unsafe parameters
+without appropriate engineering warnings.
 
-Selected features can be linked with engineering context including dimensions,
-tolerances, datums and process requirements.
+PHASE 4 — DASHBOARD
+Verify:
+- Project-level aggregation
+- Weld group aggregation
+- Energy KPIs
+- Cost KPIs
+- Charts and summaries
+- Correct handling of empty datasets
+- Consistency between backend and frontend
+- TR/EN terminology and engineering units
 
-## Engineering Principle
+PHASE 5 — IMPORT AND EXPORT
+Verify:
+- Excel import templates
+- XLSX parsing
+- CSV report generation
+- XLSX report generation
+- PDF report generation
+- Field mapping and validation
+- Missing or invalid values
+- Formula and unit consistency
+- Exported results versus calculated results
 
-MachiningPro AI is currently an **engineering decision-support system**.
+Use local synthetic test fixtures only.
 
-Engineering review remains mandatory.
+PHASE 6 — SECURITY AND DATA SAFETY
+Verify:
+- Authentication and authorization
+- READ_ONLY role restrictions
+- Invalid token handling
+- Input validation
+- File upload validation
+- No secret leakage
+- No unauthorized database writes
 
-The current release does **not** claim:
+Do not execute authenticated production write requests.
+Do not upload files to production.
+Do not create or delete production records.
 
-- autonomous engineering approval
-- automatic CAM toolpath generation
-- collision-verified machining simulation
-- automatic NC execution
-- automatic production release
+PHASE 7 — TEST EXECUTION
+1. Run relevant local backend tests.
+2. Run relevant frontend tests.
+3. Run production build checks.
+4. Independently verify key numerical results.
+5. Investigate failures without hiding or excluding them.
+6. Distinguish confirmed pre-existing failures from new regressions.
+7. Perform production read-only probes only.
 
-## Current Demo Release
+PHASE 8 — FINAL REPORT
+Produce:
 
-**MachiningPro AI 0.5.0-demo**
+A. Functional coverage matrix
+B. Engineering formula validation
+C. Optimization validation
+D. Dashboard validation
+E. Import/export validation
+F. Authentication and security findings
+G. Test execution results
+H. Defects ranked P0/P1/P2/P3
+I. Missing capabilities
+J. Recommended corrective actions
 
-Current development focus:
+For every finding include:
+- Exact file path
+- Relevant function or line number
+- Expected behavior
+- Actual behavior
+- Supporting evidence
+- Severity
+- Recommended correction
 
-- Drawing & CAD Intelligence
-- Manufacturing Feature Recognition
-- GD&T Intelligence
-- Process Route Optimization
-- Process Capability
-- Cycle Time
-- Manufacturing Planning
-- Inspection & Control Planning
+FINAL VERDICT:
+PASS / CONDITIONAL PASS / FAIL
 
-## Technology
+Explicitly distinguish:
+1. Deployment readiness
+2. API accessibility
+3. Software functional correctness
+4. Engineering model validation
+5. Customer-demo readiness
 
-- Python
-- FastAPI
-- React
-- TypeScript
-- Three.js
-- Engineering rule engines
-- Deterministic manufacturing logic
-- CAD / IGES interoperability
+STRICT SAFETY RULES:
+- Do not modify production database.
+- Do not modify production configuration.
+- Do not commit.
+- Do not push.
+- Do not deploy.
+- Do not execute destructive commands.
+- Do not modify source files in this phase.
+- Do not claim physical welding validation from
+  synthetic data or unit tests.
+- Stop after delivering the audit report.
 
-## Target Users
-
-- Manufacturing Engineers
-- Process Engineers
-- CNC / Machining Engineers
-- Industrialization Engineers
-- Quality Engineers
-- Supplier Development Engineers
-- OEM & Tier-1 Engineering Teams
-
----
-
-**From Drawing & CAD Intelligence to Manufacturing Planning**
