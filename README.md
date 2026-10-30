@@ -1,9 +1,10 @@
 # MachiningPro AI
 
-**Engineering Intelligence for Machining & Manufacturing Planning**
+### Engineering Intelligence for Machining & Manufacturing Planning
 
-MachiningPro AI is an engineering decision-support platform designed to connect
-technical drawings and CAD data with machining process planning in a traceable workflow.
+MachiningPro AI is an engineering decision-support platform that connects technical drawings and CAD data with machining process planning in a traceable manufacturing workflow.
+
+---
 
 ## Current Capabilities
 
@@ -24,60 +25,110 @@ technical drawings and CAD data with machining process planning in a traceable w
 - JSON / CSV / HTML engineering exports
 - Turkish / English interface
 
+---
+
 ## Real IGES Engineering Demo
 
-The current demo processes a real synthetic, non-proprietary IGES model through the
-MachiningPro AI engineering pipeline.
+MachiningPro AI can process a real synthetic, non-proprietary IGES model through the engineering pipeline.
 
-Typical workflow:
+### Workflow
 
 **IGES / Drawing**
+
 → **Engineering Requirements**
+
 → **3D Feature Recognition**
+
 → **GD&T Intelligence**
+
 → **Alternative Process Routes**
+
 → **Process Capability**
+
 → **Cycle Time**
+
 → **Manufacturing Plan**
+
 → **Inspection & Control**
+
 → **Traceable Export**
+
+---
 
 ## 3D Feature Intelligence
 
-MachiningPro AI can visualize the imported part and highlight recognized manufacturing
-features such as holes, precision diameters and other machinable geometry.
+The current demo visualizes real imported geometry and highlights recognized manufacturing features.
 
-Selected features can be linked with engineering context including dimensions,
-tolerances, datums and process requirements.
+Examples include:
+
+- Holes
+- Precision diameters
+- Bores
+- Slots
+- Pockets
+- Machining-related geometry
+
+Selected features can be linked to:
+
+- Dimensions
+- Tolerances
+- Datums
+- GD&T requirements
+- Manufacturing context
+
+---
+
+## Process Planning Intelligence
+
+MachiningPro AI supports engineering evaluation of:
+
+- Alternative process routes
+- Setup strategies
+- Machine candidates
+- Cutting-tool candidates
+- Tool-holder candidates
+- Process capability
+- Cycle-time components
+- Manufacturing sequence
+- Inspection requirements
+
+---
 
 ## Engineering Principle
 
-MachiningPro AI is currently an **engineering decision-support system**.
+MachiningPro AI is currently an:
 
-Engineering review remains mandatory.
+**Engineering Decision-Support System**
 
-The current release does **not** claim:
+Engineering review and approval remain mandatory.
 
-- autonomous engineering approval
-- automatic CAM toolpath generation
-- collision-verified machining simulation
-- automatic NC execution
-- automatic production release
+The current release does not claim:
+
+- Autonomous engineering approval
+- Automatic CAM toolpath generation
+- Collision-verified machining simulation
+- Automatic NC execution
+- Automatic production release
+
+---
 
 ## Current Demo Release
 
 **MachiningPro AI 0.5.0-demo**
 
-Current development focus:
+Current development areas:
 
-- Drawing & CAD Intelligence
-- Manufacturing Feature Recognition
+- Drawing Intelligence
+- CAD / IGES Intelligence
 - GD&T Intelligence
+- Manufacturing Feature Recognition
 - Process Route Optimization
 - Process Capability
 - Cycle Time
 - Manufacturing Planning
 - Inspection & Control Planning
+
+---
 
 ## Technology
 
@@ -90,7 +141,11 @@ Current development focus:
 - Deterministic manufacturing logic
 - CAD / IGES interoperability
 
+---
+
 ## Target Users
+
+MachiningPro AI is being developed for:
 
 - Manufacturing Engineers
 - Process Engineers
@@ -98,9 +153,13 @@ Current development focus:
 - Industrialization Engineers
 - Quality Engineers
 - Supplier Development Engineers
-- OEM & Tier-1 Engineering Teams
+- OEM Engineering Teams
+- Tier-1 Engineering Teams
 
 ---
 
+## Vision
+
 **From Drawing & CAD Intelligence to Manufacturing Planning**
 
+The long-term objective is to build a traceable engineering environment that supports manufacturing decisions from product definition through process planning and industrialization.
