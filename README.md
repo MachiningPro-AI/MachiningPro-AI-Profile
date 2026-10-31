@@ -4,6 +4,26 @@
 
 MachiningPro AI is an engineering decision-support platform that connects technical drawings and CAD data with machining process planning in a traceable manufacturing workflow.
 
+<p align="center">
+  <img src="assets/machiningpro-3d-feature-view.png"
+       alt="MachiningPro AI – Real IGES 3D Feature Recognition"
+       width="100%">
+</p>
+
+---
+
+## Real IGES Engineering Demo
+
+This demo uses a synthetic, non-proprietary IGES model processed through the real MachiningPro pipeline — no customer data, no proprietary geometry.
+
+### English Demo
+
+[▶ Watch MachiningPro AI Real IGES Demo — English](assets/MachiningPro_AI_DEMO_EN.mp4)
+
+### Türkçe Demo
+
+[▶ MachiningPro AI Gerçek IGES Demosunu İzle](assets/MachiningPro_AI_DEMO_TR.mp4)
+
 ---
 
 ## Current Capabilities
@@ -27,39 +47,26 @@ MachiningPro AI is an engineering decision-support platform that connects techni
 
 ---
 
-## Real IGES Engineering Demo
+## Engineering Workflow
 
-MachiningPro AI can process a real synthetic, non-proprietary IGES model through the engineering pipeline.
-
-### Workflow
-
-**IGES / Drawing**
-
-→ **Engineering Requirements**
-
-→ **3D Feature Recognition**
-
-→ **GD&T Intelligence**
-
-→ **Alternative Process Routes**
-
-→ **Process Capability**
-
-→ **Cycle Time**
-
-→ **Manufacturing Plan**
-
-→ **Inspection & Control**
-
-→ **Traceable Export**
+```
+IGES / Drawing
+→ Engineering Requirements
+→ 3D Feature Recognition
+→ GD&T Intelligence
+→ Alternative Process Routes
+→ Process Capability
+→ Cycle Time
+→ Manufacturing Plan
+→ Inspection & Control
+→ Traceable Export
+```
 
 ---
 
 ## 3D Feature Intelligence
 
-The current demo visualizes real imported geometry and highlights recognized manufacturing features.
-
-Examples include:
+The current demo visualizes imported geometry and highlights recognized manufacturing features such as:
 
 - Holes
 - Precision diameters
@@ -68,13 +75,7 @@ Examples include:
 - Pockets
 - Machining-related geometry
 
-Selected features can be linked to:
-
-- Dimensions
-- Tolerances
-- Datums
-- GD&T requirements
-- Manufacturing context
+Selected features can be linked to dimensions, tolerances, datums, GD&T requirements, and manufacturing context.
 
 ---
 
@@ -102,7 +103,7 @@ MachiningPro AI is currently an:
 
 Engineering review and approval remain mandatory.
 
-The current release does not claim:
+The current release does NOT claim:
 
 - Autonomous engineering approval
 - Automatic CAM toolpath generation
@@ -115,18 +116,6 @@ The current release does not claim:
 ## Current Demo Release
 
 **MachiningPro AI 0.5.0-demo**
-
-Current development areas:
-
-- Drawing Intelligence
-- CAD / IGES Intelligence
-- GD&T Intelligence
-- Manufacturing Feature Recognition
-- Process Route Optimization
-- Process Capability
-- Cycle Time
-- Manufacturing Planning
-- Inspection & Control Planning
 
 ---
 
@@ -144,8 +133,6 @@ Current development areas:
 ---
 
 ## Target Users
-
-MachiningPro AI is being developed for:
 
 - Manufacturing Engineers
 - Process Engineers
